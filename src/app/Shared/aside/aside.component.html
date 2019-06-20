@@ -1,0 +1,7 @@
+
+<h3>{{title}}</h3>
+<div class="card" style="width: 100%;">
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let news of topNews" class="list-group-item"><a  [routerLink]="['/detailsComponent',news.ID]">{{news.Name}}</a></li>
+  </ul>
+</div>

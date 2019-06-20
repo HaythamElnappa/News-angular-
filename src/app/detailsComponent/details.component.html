@@ -1,0 +1,11 @@
+<div style="padding-top: 30px"  class="card mb-3">
+  <h5 class="card-title" style="text-align: center">"{{news.Name}}"</h5>
+  <img [src]="news.Image"  class="card-img-top" width="150px" height="400px">
+  <div class="card-body">
+    <p class="card-text"><small class="text-muted">{{news.Date | date:"short"}}</small></p>
+    <p class="card-text" [innerHTML]="news.Desc"></p>
+    <a [routerLink]="['/department-newsComponent/', news.DepartmentID]" class="btn btn-primary">الرجوع</a>
+
+  </div>
+</div>
+
